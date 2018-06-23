@@ -21,6 +21,7 @@
     "koa": "^2.5.1",
     "koa-bodyparser": "^4.2.1",
     "koa-convert": "^1.2.0",
+    "koa-cors": "0.0.16",
     "koa-logger": "^3.2.0",
     "koa-parser": "^1.0.5",
     "koa-res": "^3.1.0",

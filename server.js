@@ -4,6 +4,7 @@ const logger = require('koa-logger');
 const convert = require('koa-convert');
 const koaRes = require('koa-res');
 const parser = require('koa-bodyparser');
+var cors = require('koa-cors');
 mongoose.connect('mongodb://mjs:knopka100@ds163610.mlab.com:63610/hoxoy');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -27,6 +28,7 @@ const router = require('./app/routers');
 
 app
   .use(parser())
+  .use(cors())
   .use(router.routes())
   .use(router.allowedMethods())
   .use(logger)
