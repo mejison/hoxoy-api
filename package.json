@@ -1,0 +1,33 @@
+{
+  "name": "t",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mejison/hoxoy-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mejison/hoxoy-api/issues"
+  },
+  "homepage": "https://github.com/mejison/hoxoy-api#readme",
+  "dependencies": {
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-logger": "^3.2.0",
+    "koa-parser": "^1.0.5",
+    "koa-res": "^3.1.0",
+    "koa-router": "^7.4.0",
+    "logger": "0.0.1",
+    "mongoose": "^5.1.6",
+    "nodemon": "^1.17.5",
+    "uuid": "^3.2.1"
+  }
+}
