@@ -12,5 +12,8 @@ module.exports = {
     },
     async update(hash, data) {
         return await Task.findOneAndUpdate({hash}, data);
+    },
+    async delete(hash) {
+        return await Task.findOneAndRemove({hash});
     }
 };

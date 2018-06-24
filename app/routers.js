@@ -34,6 +34,10 @@ router.put('/boards/:hash', async (ctx) => {
     ctx.body = {status: true, message: 'Success update.'};
 });
 
+router.delete('/boards/:hash', async (ctx) => {
+    controllers.board.delete(ctx.params.hash);
+    ctx.body = {status: true, message: 'Success delete.'};
+});
 
 router.post('/tasks', async (ctx) => {
     const post = ctx.request.body;
@@ -58,6 +62,11 @@ router.put('/tasks/:hash', async (ctx) => {
     controllers.task.update(ctx.params.hash, ctx.request.body);
 
     ctx.body = {status: true, message: 'Success update.'};
+});
+
+router.delete('/tasks/:hash', async (ctx) => {
+    controllers.task.delete(ctx.params.hash);
+    ctx.body = {status: true, message: 'Success delete.'};
 });
 
 module.exports = router;

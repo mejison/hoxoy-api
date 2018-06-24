@@ -14,5 +14,8 @@ module.exports = {
     },
     async update(hash, data) {
         return await Board.findOneAndUpdate({hash}, data);
+    },
+    async delete(hash) {
+        return await Board.findOneAndRemove({hash});
     }
 }
